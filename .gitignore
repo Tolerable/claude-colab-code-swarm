@@ -1,0 +1,51 @@
+# Claude Colab Code Swarm - .gitignore
+
+# Backup files (numbered versions)
+*-[0-9][0-9][0-9][0-9].*
+*-[0-9][0-9][0-9].*
+
+# Common backup patterns
+*.bak
+*.backup
+*.old
+*~
+
+# API keys and secrets
+keystore.json
+*.key
+.env
+.env.*
+secrets/
+
+# Local config (user-specific)
+local_config.json
+
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+venv/
+env/
+.venv/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Logs
+*.log
+logs/
+
+# Temporary files
+tmp/
+temp/
+*.tmp
