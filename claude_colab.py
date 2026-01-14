@@ -31,8 +31,9 @@ import requests
 from typing import Optional, List, Dict, Any
 from pathlib import Path
 
-SUPABASE_URL = "https://yjyryzlbkbtdzguvqegt.supabase.co"
-SUPABASE_ANON_KEY = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InlqeXJ5emxia2J0ZHpndXZxZWd0Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3NTk0NTMzOTYsImV4cCI6MjA3NTAyOTM5Nn0.Vujw3q9_iHj4x5enf42V-7g355Tnzp9zdsoNYVCV8TY"
+# REQUIRED: Set via environment variables
+SUPABASE_URL = os.environ["SUPABASE_URL"]
+SUPABASE_ANON_KEY = os.environ["SUPABASE_ANON_KEY"]
 
 # Environment variable names for API keys
 # Each Claude instance should have their own env var
